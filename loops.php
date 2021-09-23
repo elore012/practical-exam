@@ -52,3 +52,14 @@ function fibonacci($input)
 }
 
 print(fibonacci((10)));
+print("\n");
+
+
+$arrayOfName = ["Marvin", "Marco", "Marvin", "Marco", "Marco", "Marvin", "Christian"];
+sort($arrayOfName);
+$total = array_count_values($arrayOfName);
+$maxNum = max($total);
+$result = array_keys($total, $maxNum);
+foreach ($result as $key => $value) {
+    echo $value . "  ";
+}
