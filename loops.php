@@ -30,7 +30,25 @@ function returnOdd()
         }
         $num++;
     } while ($num <= 10);
-    return "Total sum of all odd numbers from 1 to 10 is " . $output;
+    return "Total sum of all odd numbers from 1 to 10 is " . $output . "\n";
 }
 
 print(returnOdd());
+
+function fibonacci($input)
+{
+    $num1 = 0;
+    $num2 = 1;
+    $output = 0;
+
+    for ($i = 0; $i <= $input; $i++) {
+
+        $output = $num1 + $num2;
+        $num1 = $num2;
+        $num2 = $output;
+
+        echo $output . ",";
+    }
+}
+
+print(fibonacci((10)));
