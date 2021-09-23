@@ -4,32 +4,33 @@
 
 function returnEven()
 {
-    $array = [];
-    $num = 1;
+    $output = 0;
+    $num = 0;
     while ($num <= 10) {
         if ($num % 2 == 0) {
-            array_push($array, $num);
+            $output += $num;
         }
         $num++;
     }
-    return $array;
+    return "Total sum of all even numbers from 1 to 10 is " . $output . "\n";
 }
 
-print_r(returnEven());
+
+print(returnEven());
 
 // do while loop and print odd numbers from 1-10
 
 function returnOdd()
 {
-    $num = 1;
-    $newArray = [];
+    $output = 0;
+    $num = 0;
     do {
         if ($num % 2 != 0) {
-            array_push($newArray, $num);
+            $output += $num;
         }
         $num++;
     } while ($num <= 10);
-    return $newArray;
+    return "Total sum of all odd numbers from 1 to 10 is " . $output;
 }
 
-print_r(returnOdd());
+print(returnOdd());
