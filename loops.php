@@ -83,3 +83,12 @@ for ($i = 0; $i < count($asscendingOrderOfNumber); $i++) {
 }
 
 echo "\n";
+
+
+$arrayOfColors = ['red', 'blue', 'black', 'red', 'blue', 'blue', 'red', 'gold',];
+$count = array_count_values($arrayOfColors);
+foreach ($count as $key => $value) {
+    if ($value === 1) {
+        echo "Not repetitive - " . $key . "\n";
+    }
+}
